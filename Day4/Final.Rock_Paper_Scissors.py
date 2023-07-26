@@ -59,7 +59,7 @@ scissors = ('''
 ---.__(___)
               ''')
 
-
+choices_images = [rock, paper, scissors]
 choices_list = ["Rock", "Paper", "Scissors"]
 
 while True:
@@ -78,22 +78,15 @@ while True:
     user_choice = int(user_choice)
     computer_choice = random.randint(0, len(choices_list) - 1)
 
-    if computer_choice == 0:
-        print(f"Computer: {choices_list[0]}{rock}")
-    elif computer_choice == 1:
-        print(f"Computer: {choices_list[1]}{paper}")
-    elif computer_choice == 2:
-        print(f"Computer: {choices_list[2]}{scissors}")
+    print(
+        f"Computer: {choices_list[computer_choice]}{choices_images[computer_choice]}")
 
-    if user_choice == 0:
-        print(f"You: {choices_list[0]}{rock}")
-    elif user_choice == 1:
-        print(f"You: {choices_list[1]}{paper}")
-    elif user_choice == 2:
-        print(f"You: {choices_list[2]}{scissors}")
-    else:
+    if (user_choice < 0) or (user_choice > 2):
         print("Option is not available. Type 0 for Rock, Type 1 for Paper,Type 2 for Scissors!")
         continue
+    else:
+        print(
+            f"You: {choices_list[user_choice]}{choices_images[user_choice]}")
 
     if computer_choice == user_choice:
         print(f"You: {user_score}\nComputer: {computer_score}")
