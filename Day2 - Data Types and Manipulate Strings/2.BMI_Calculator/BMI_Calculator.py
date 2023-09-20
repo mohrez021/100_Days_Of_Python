@@ -7,4 +7,4 @@ print("BMI:\
 weight = int(input("Enter your weight in KG: "))
 height = float(input("Enter your height in meter: "))
 BMI = weight / (height ** 2)
-print(f"{weight} ÷ ({height} * {height}) = {BMI}\n{int(BMI)}")
+print(f"{weight} ÷ ({height} * {height}) = {BMI}\n{round(BMI)}")

@@ -17,3 +17,9 @@
     80 ÷ (1.75 x 1.75) = 26.122448979591837
     26
     ```
+    
+### Hint
+1. Check the data type of the inputs.
+2. Try to use the exponent operator in your code.
+3. Remember PEMDAS.
+4. Remember to convert your result to a whole number (int).

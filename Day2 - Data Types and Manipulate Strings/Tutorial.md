@@ -52,6 +52,12 @@ print("your name has " + num_char + " characters.")
 
 ## mathematical operations: + - / * % **
 +=  /=  *=  -=
+```
+num1 += num2      # num1 = num1 + num2
+num1 /= num2      # num1 = num1 / num2
+num1 *= num2      # num1 = num1 * num2
+num1 -= num2      # num1 = num1 - num2
+```
 
 priority: PEMDAS
 1.     Parentheses     ()
@@ -69,8 +75,12 @@ print(num)  #=> 10
 ```
 
 ### Number Manipulation and F Strings in Python
+int() به سمت پایین گرد میکنه عدد اعشاری رو
 * round()
-  * به سمت بالا رند میکنه 
+  * به سمتی که نزدیک تره عدد رو گرد میکنه 
+    * round(2.6666666)        # 3
+    * round(2.6666666, 2)     # 2.67
+
 * / => result is float
 * // => result is integer (ignore all numbers after decimal point.)
 * f"{var1} string {var2} string string {varn}"
