@@ -71,8 +71,8 @@ else:
     print("Sorry, you have to grow taller before you can ride;.")
 ```
 
-#### example2: roller coaster ticket
-![img.png](img.png)
+#### example2: roller coaster ticket and picture
+![img_5.png](img_5.png)
 ```
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
