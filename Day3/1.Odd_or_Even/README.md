@@ -1,12 +1,13 @@
-'''
-Instructions
+## Instructions
 Write a program that works out whether if a given number is an odd or even number.
-Even numbers can be divided by 2 with no remainder.
+### Hint: 
+* Even numbers can be divided by 2 with no remainder.
 e.g. 86 is even because 86 ÷ 2 = 43
 43 does not have any decimal places. Therefore the division is clean.
 e.g. 59 is odd because 59 ÷ 2 = 29.5
 29.5 is not a whole number, it has decimal places. Therefore there is a remainder of 0.5, so the division is not clean.
-The modulo is written as a percentage sign (%) in Python. It gives you the remainder after a division.
+
+* The modulo is written as a percentage sign (%) in Python. It gives you the remainder after a division.
 e.g.
 6 ÷ 2 = 3 with no remainder.
 therefore: 6 % 2 = 0
@@ -14,20 +15,16 @@ therefore: 6 % 2 = 0
 therefore: 5 % 2 = 1
 14 ÷ 4 = 3 x 4 + 2, remainder is 2.
 therefore: 14 % 4 = 2
-Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.
+
+* Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.
+```
 Example Input 1
 43
 Example Output 1
 This is an odd number.
+
 Example Input 2
 94
 Example Output 2
 This is an even number.
-'''
-number = int(input("Which number do you want to check? "))
-if (number % 2) == 0:
-    result = "even"
-else:
-    result = "odd"
-
-print(f"This is an {result} number.")
+```
