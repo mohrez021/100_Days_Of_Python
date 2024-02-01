@@ -9,5 +9,5 @@ What it does
 
 It asked for user input to left or right. After that on the user choice go to next stage of game.
 From second stage user get 2 option to choose waiting for a boat or swimming toward the island.
-From third stage user get 3 option to choose the door to get to trasure only one of the door is right option.Let Have a Fun!! 😁🎯.
+From third stage user get 3 option to choose the door to get to trasure only one of the door is right option.Let Have a Fun!! 😁🎯. 
 

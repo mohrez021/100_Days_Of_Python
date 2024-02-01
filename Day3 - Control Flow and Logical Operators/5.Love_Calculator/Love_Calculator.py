@@ -1,25 +1,26 @@
 ############## way1 ##############
-digit_1 = 0
-digit_2 = 0
-score = 0
+num1 = 0
+num2 = 0
 
-name_1 = input("Enter your name: ")
-name_2 = input("Enter your crush name: ")
-both_name = (name_1 + name_2).lower()
+name1 = input("Enter your name: ")
+name2 = input("Enter your crush name: ")
 
-for letter in both_name:
-    digit_1 += "true".count(letter)
-    digit_2 += "love".count(letter)
 
-score = int(str(digit_1) + str(digit_2))
+name = (name1 + name2).lower()
+for c in "true":
+  num1 += name.count(c)
 
-if (score < 10) or (score > 90):
-    print(f"Your score is {score}, you go together like coke and mentos.")
-elif (score >= 40) and (score <= 50):
-    print(f"Your score is {score}, you are alright together.")
+for c in "love":
+  num2 += name.count(c)
+
+num = int(str(num1) + str(num2))
+
+if num < 10 or num > 90:
+  print(f"Your score is {num}, you go together like coke and mentos.")
+elif num > 40 and num < 50:
+  print(f"Your score is {num}, you are alright together.")
 else:
-    print(f"Your score is {score}%.")
-
+  print(f"Your score is {num}.")
 
 ############## way2 ##############
 '''

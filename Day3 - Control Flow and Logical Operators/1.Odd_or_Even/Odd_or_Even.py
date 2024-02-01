@@ -1,7 +1,6 @@
 number = int(input("Which number do you want to check? "))
 if (number % 2) == 0:
-    result = "even"
+    print("This is an even number.")
 else:
-    result = "odd"
+    print("This is an odd number.")
 
-print(f"This is an {result} number.")
