@@ -260,7 +260,7 @@ else:
 note: if num % 2 == 0,  num is even, else num is odd
 
 ---
-
+# Day 04
 ## Randomisation
 https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences
 
@@ -309,12 +309,22 @@ print(mixed_list)                               # output: [['new_item1', 'new_it
 print(mixed_list[0])                            # output: [['new_item1', 'new_item2', 'new_item3', 'new_item4']]
 print(mixed_list[0][1])                         # output: new_item2
 ```
+---
+# Day 05 - Python Loops
+```python
+# for loop
+items = ["item1", "item2", "item3"]
+for item in items:
+    print(item)
 
+for num in range(a, b, c):
+    print(num)  # a, a+c, a+c+c, ...  => [a, b) note: default c is 1
+```
 
 
 ---
 
-# exta notes
+# extra notes
 
 * str.replace(" ", "") => means remove all spaces in str
 * "str1,str2,str3".split(sep=",") => seperate eacb item base on "," and create a list of items => ["str1", "str2", "str3"]
