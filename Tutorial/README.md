@@ -310,7 +310,7 @@ print(mixed_list[0])                            # output: [['new_item1', 'new_it
 print(mixed_list[0][1])                         # output: new_item2
 ```
 ---
-# Day 05 - Python Loops
+# Day 05 - Python For Loops 
 ```python
 # for loop
 items = ["item1", "item2", "item3"]
@@ -320,8 +320,17 @@ for item in items:
 for num in range(a, b, c):
     print(num)  # a, a+c, a+c+c, ...  => [a, b) note: default c is 1
 ```
+# Day 06 - Python Functions & Karel
+```python
+### define func 
+def myfunc():
+    # do this
+    # then do this
+    # finally do this
 
-
+### call(execute) func
+myfunc()
+```
 ---
 
 # extra notes
