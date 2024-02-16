@@ -333,6 +333,39 @@ myfunc()
 ```
 ---
 
+# Day 08 - Function Parameters
+![Alt text](image.png)
+- function with input (Parameter and argument)
+    ```python 
+    # The argument is the actual piece of data, that's going to be passed over to this function when it's being called. whereas the parameter is the name of that data
+    def greet_with_name(name):               # name is a parameter
+        print(f"Hello {name}.")
+        print(f"How do you do {name}.")
+    
+    greet_with_name("Mohammadreza")          # Mohammadreza is an argument
+    ```
+
+- funtion with more than one input
+
+    ```python
+    # Positional Argument: 
+    # Position of the arguments is important during the calling function. The first argument gets assigned at the first parameter, and the second argument gets assigned at the second parameter ...
+    def greet_with(name, location):
+        print(f"Hello {name}.")
+        print(f"What is it like in {location}.")
+    
+    greet_with("Mohammadreza", "Tehran")
+
+
+    # Keyword Arguments: 
+    # Possition is not important. argument=parameter
+    def greet_with(name, location):
+        print(f"Hello {name}.")
+        print(f"What is it like in {location}.")
+    
+    greet_with(location = "Tehran", name = "Mohammadreza")
+    ```
+
 # extra notes
 
 * str.replace(" ", "") => means remove all spaces in str
@@ -341,3 +374,4 @@ myfunc()
 * len("string") => give us number of characters of "string"
 * random.choice(list) = > choose one of list items randomly
 * ['a', 'b', 'c'].index('b')    => 1
+* math.ceil(num)    => round up a number
