@@ -365,6 +365,77 @@ myfunc()
     
     greet_with(location = "Tehran", name = "Mohammadreza")
     ```
+# Day 09 - Dictionaries and Nesting
+```python
+### Define Dictionary
+my_dict = {
+    "key1": "value1", 
+    "key2": "value2", 
+    "key3": 3, 
+    "key4": [1, 2, 3], 
+    "key5": {"k1": "v1", "k2": "v2"},
+    6: "value6"
+    }
+
+### retriev an ITEM from dictionary
+my_dict["key1"]     # value1
+my_dict["key5"]     # {"k1": "v1", "k2": "v2"}
+my_dict[6]          # value6
+
+### Adding new Items to dictionary
+my_dict["key7"] = "value7"
+print(my_dict)      # {'key1': 'value1', 'key2': 'value2', 'key3': 3, 'key4': [1, 2, 3], 'key5': {'k1': 'v1', 'k2': 'v2'}, 6: 'value6', 'key7': 'value7'}
+
+### Edit an Item in dictionary
+my_dict["key2"] = "new_value2"
+
+### Loop through a dictionary
+for each_key in my_dict:
+    print(each_key)     # print each key in each iterate
+    print(my_dict[each_key])    # print value base on each key
+
+### Define an empty dictionary
+my_dict2 = {}
+
+### Wipe an existing dictionary
+my_dict = {}
+print(my_dict)      # {}
+
+
+#Nesting 
+capitals = {
+  "France": "Paris",
+  "Germany": "Berlin",
+}
+
+#Nesting a List in a Dictionary
+travel_log = {
+  "France": ["Paris", "Lille", "Dijon"],
+  "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
+
+#Nesting Dictionary in a Dictionary
+travel_log = {
+  "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
+  "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+}
+
+#Nesting Dictionaries in Lists
+travel_log = [
+{
+  "country": "France", 
+  "cities_visited": ["Paris", "Lille", "Dijon"], 
+  "total_visits": 12,
+},
+{
+  "country": "Germany",
+  "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+  "total_visits": 5,
+},
+]
+
+```
+
 
 # extra notes
 
