@@ -435,7 +435,32 @@ travel_log = [
 ]
 
 ```
+# Day10 - Functions with Outputs
+```python
+##### return => tells the computer it is the end of the function and lines after return in function never process
+def format_name(f_name, l_name):
+    return f"{f_name.title()} {l_name.title()}"
 
+output = format_name(input("What is your first name: "), input("What is your last name: "))
+print(output)
+## output
+# What is your first name: mohammadreza
+# What is your last name: bigdeli
+# Mohammadreza Bigdeli
+
+#### multiple returns . function is gonna exit in first return
+def format_name(f_name, l_name):
+    if f_name == "" or l_name == "":
+        return
+    return f"{f_name.title()} {l_name.title()}"
+
+output = format_name(input("What is your first name: "), input("What is your last name: "))
+print(output)
+## output
+# What is your first name: 
+# What is your last name: 
+# None
+```
 
 # extra notes
 
